@@ -1,0 +1,26 @@
+<html>
+<head>
+</head>
+<body>
+<p id="a">Click button</p>
+<button onclick="func1()">Click</button>
+<p id="b">Click</p>
+<button onclick="func2()">Click</button>
+<p class="c">Click</p>
+<button onclick="func3()">Click</button>
+<script>
+function func1()
+{
+  document.getElementById("a").innerHTML="content1";
+}
+function func2()
+{
+  document.getElementsByTagName("p")[1].innerHTML="content2";
+}
+function func3()
+{
+  document.getElementsByClassName("c")[0].innerHTML="content3";
+}
+</script>
+</body>
+</html>

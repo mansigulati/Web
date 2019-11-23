@@ -1,0 +1,34 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+var flower=["rose","lily","sflower"];
+var num=[100,12,3,40];
+document.write(flower[0]+"<br>");
+document.write(flower+"<br>");
+document.write(flower[flower.length-1]+"<br>");
+document.write(flower.toString()+"<br>");
+document.write(flower.join("*")+"<br>");
+document.write(flower.push("mgold")+"<br>");
+document.write(flower.pop()+"<br>");
+document.write(flower.pop()+"<br>");
+document.write(flower.shift()+"<br>");
+document.write(flower.unshift("rose")+"<br>");
+flower.splice(1,0,"daisy","jasmine");
+document.write(flower+"<br>");
+var animals=["cat","dog"];
+var a1=flower.concat(animals);
+document.write(a1+"<br>");
+var a2=flower.slice(1);
+document.write(a2+"<br>");
+var a3=flower.slice(1,3);
+document.write(a3+"<br>");
+num.sort(function(a,b)
+          {
+               return a-b;
+           });
+document.write(num+"<br>");
+</script>
+</body>
+</html>

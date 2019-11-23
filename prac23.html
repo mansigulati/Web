@@ -1,0 +1,25 @@
+<html>
+<head><title>1710991367</title>
+</head>
+<body>
+<h3 id="id01">my first page</h3><h3 id="abc"><ul id="List"><li>coffee</li><li>Tea</li><li>lemon tea</li></ul></h3>
+<p id="id02"></p>
+<p id="id03"></p>
+<p id="id04"></p>
+<p id="id05"></p>
+<p id="id06"></p>
+<p id="id07"></p>
+<script>
+document.getElementById("id02").innerHTML="<b>first child:</b>"+document.getElementById("id01").firstChild.nodeValue;
+document.getElementById("id03").innerHTML="<b>child node:</b>"+document.getElementById("List").childNodes[0].nodeValue;
+document.getElementById("id04").innerHTML="<b>node name:</b>"+document.getElementById("id01").nodeName;
+document.getElementById("id05").innerHTML="<b>node type:</b>"+document.getElementById("id01").nodeType;
+document.getElementById("id06").innerHTML="<b>last child:</b>"+document.getElementById("List").lastChild.innerHTML;
+document.getElementById("id07").innerHTML="<b>parent node:</b>"+document.getElementById("List").parentNode.nodeName;
+
+</script>
+</body>
+</html>
+
+
+

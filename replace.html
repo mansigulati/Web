@@ -1,0 +1,41 @@
+<html>
+<head>
+</head>
+<body>
+<ol id="list">
+<li id="p1">USA</li>
+<li id="p2">United Kingdom</li>
+<li id="p3">Canada</li>
+<li id="p4">India</li>
+<li id="p5">Australia</li>
+</ol>
+<button onclick="append()">append</button>
+<button onclick="remove()">remove</button>
+<button onclick="replace()">replace</button>
+<script>
+function append()
+{
+   var para=document.createElement("li");
+   var node=document.createTextNode("Paris");
+   para.appendChild(node);
+   var la=document.getElementById("list");
+   var item=document.getElementById("p4");
+   la.insertBefore(para,item);
+}
+function remove()
+{
+   var l=document.getElementById("list");
+   var i=document.getElementById("p4");
+   l.removeChild(l.childNodes[4]);
+}
+function replace()
+{
+   var par=document.createElement("li");
+   var textnode=document.createTextNode("russia");
+   par.appendChild(textnode);
+   var rep=document.getElementById("list");
+   rep.replaceChild(par,rep.childNodes[2]);
+}
+</script>
+</body>
+</html>
