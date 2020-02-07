@@ -1,2 +1,2 @@
 # Web
-HTML AND CSS Basic prog.
+HTML AND CSS from scratch.
